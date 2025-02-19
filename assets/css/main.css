@@ -638,7 +638,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url(assets/img/beach-2.jpg) top center no-repeat;
+  background: url(../img/beach-2.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 90vh;
