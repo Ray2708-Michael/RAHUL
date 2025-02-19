@@ -638,7 +638,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url(../img/beach 2 .jpg) top center no-repeat;
+  background: url(../img/beach 2.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 90vh;
@@ -651,7 +651,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 90%);
+  background: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
   z-index: 2;
