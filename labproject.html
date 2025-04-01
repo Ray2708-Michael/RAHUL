@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .programmes {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #d9534f; /* Red color for the main header */
+        }
+        .programme {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .programme h2 {
+            background-color: #f5f5f5;
+            padding: 10px;
+            margin: -15px -15px 15px -15px;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .details {
+            display: none; /* Initially hide details */
+        }
+        .details.active {
+            display: block; /* Show details when active */
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <div class="programmes">
+        <h1>Lab Experience</h1>
+
+        <!-- project-1 -->
+        <div class="programme">
+            <h2 onclick="toggleDetails('project-1')">project-1</h2>
+            <div id="project-1" class="details">
+                <ul>
+                    <li><strong>Aim:</strong> Aerospace Engineering (AE)</li>
+                    <li><strong>Material Used:</strong> Aerospace Engineering</li>
+                    <li><strong>Introduction:</strong> 19</li>
+                    <li><strong>Procedure:</strong> B.E. / B.Tech. or equivalent engineering degree (with a GATE Paper in AE; CE; CH; EC; EE; ME; XE)</li>
+                    <li><strong>Result and Conclusion:</strong> Selection is based on 100% GATE score</li>
+                    <li><strong>Future Study:</strong> Aerodynamics; Propulsion; Structures; Control, Navigation, Guidance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- project-2 -->
+        <div class="programme">
+            <h2 onclick="toggleDetails('ai')">Artificial Intelligence (AI)</h2>
+            <div id="ai" class="details">
+                <!-- Add project-2 details here -->
+                <p>Details for project-2 will go here.</p>
+            </div>
+        </div>
+
+        <!-- project-3 -->
+        <div class="programme">
+            <h2 onclick="toggleDetails('bioengineering')">Bioengineering (BE)</h2>
+            <div id="bioengineering" class="details">
+                <!-- Add project-3 details here -->
+                <p>Details for project-3 will go here.</p>
+            </div>
+        </div>
+
+        <!-- project-4 -->
+        <div class="programme">
+            <h2 onclick="toggleDetails('civil')">Civil Engineering (CE)</h2>
+            <div id="civil" class="details">
+                <!-- Add project-4 details here -->
+                <p>Details for project-4 will go here.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
